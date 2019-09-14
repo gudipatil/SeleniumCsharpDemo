@@ -45,7 +45,7 @@ namespace SeleniumCsharpDemo.Specflow.Hookup
             Page.TimeAndMaterial.ClickCreateNew();
             Page.TimeAndMaterial.EnterValidDataandSave(typecode, code, description, price);
             Assert.IsTrue("RecordFound" == Page.TimeAndMaterial.ValidateData(typecode, code, description, "$" + price), "Created record not found");
-            BrowserFactory.CloseAllDrivers();
+            BrowserFactory.CloseDriver();
         }
 
         [Then(@"I should be able to delete a time and material record\.")]
@@ -67,7 +67,7 @@ namespace SeleniumCsharpDemo.Specflow.Hookup
             Page.Home.ClickTimenMaterial();
             Assert.IsTrue("RecordNotFound" == Page.TimeAndMaterial.ValidateData(typecode, code, description, "$" + price), "Validate Failed");
 
-            BrowserFactory.CloseAllDrivers();
+            BrowserFactory.CloseDriver();
         }
 
         [Then(@"I should be able to edit a time and material record\.")]
@@ -97,7 +97,7 @@ namespace SeleniumCsharpDemo.Specflow.Hookup
             Page.Home.ClickTimenMaterial();
 
             Page.TimeAndMaterial.DeleteData(newtypecode, newcode, newdescription, "$" + newprice);
-            BrowserFactory.CloseAllDrivers();
+            BrowserFactory.CloseDriver();
 
 
         }

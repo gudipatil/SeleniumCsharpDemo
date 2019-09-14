@@ -13,14 +13,8 @@ using System.Configuration;
 namespace SeleniumCsharpDemo.NunitTests
 {
     [TestFixture]
-    [Parallelizable]
     class TMTests
     {
-
-        static void Main(string[] args)
-        {
-
-        }
 
         [SetUp]
         public void BeforeEachTestCase()
@@ -35,7 +29,7 @@ namespace SeleniumCsharpDemo.NunitTests
         public void AfterEachTestCase()
         {
             // Close driver
-            BrowserFactory.CloseAllDrivers();
+            BrowserFactory.CloseDriver();
         }
 
         [Test]
@@ -54,6 +48,7 @@ namespace SeleniumCsharpDemo.NunitTests
             Page.TimeAndMaterial.ClickCreateNew();
             Page.TimeAndMaterial.EnterValidDataandSave(typecode, code, description, price);
             Assert.IsTrue("RecordFound" == Page.TimeAndMaterial.ValidateData(typecode, code, description, "$" + price), "Created record not found");
+       
         }
 
         [Test]
@@ -82,7 +77,7 @@ namespace SeleniumCsharpDemo.NunitTests
             Page.Home.ClickAdminstration();
             Page.Home.ClickTimenMaterial();
             Page.TimeAndMaterial.DeleteData(newtypecode, newcode, newdescription, "$" + newprice);
-
+            
         }
 
         [Test]
@@ -107,7 +102,6 @@ namespace SeleniumCsharpDemo.NunitTests
             Page.Home.ClickAdminstration();
             Page.Home.ClickTimenMaterial();
             Assert.IsTrue("RecordNotFound" == Page.TimeAndMaterial.ValidateData(typecode, code, description, "$" + price), "Validate Failed");
-
         }
     }
 }

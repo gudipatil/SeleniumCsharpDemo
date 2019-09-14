@@ -2,8 +2,8 @@ C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\bin\Debug
 C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\bin\Debug\NUnit3.TestAdapter.pdb
 C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\bin\Debug\nunit.engine.dll
 C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\bin\Debug\nunit.engine.api.dll
-C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\bin\Debug\SeleniumCsharpDemo.exe.config
-C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\bin\Debug\SeleniumCsharpDemo.exe
+C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\bin\Debug\SeleniumCsharpDemo.dll.config
+C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\bin\Debug\SeleniumCsharpDemo.dll
 C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\bin\Debug\SeleniumCsharpDemo.pdb
 C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\bin\Debug\BoDi.dll
 C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\bin\Debug\ExcelDataReader.DataSet.dll
@@ -33,6 +33,6 @@ C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\bin\Debug
 C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\bin\Debug\WebDriver.Support.xml
 C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\obj\Debug\SeleniumCsharpDemo.csproj.CoreCompileInputs.cache
 C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\obj\Debug\SeleniumCsharpDemo.csproj.CopyComplete
-C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\obj\Debug\SeleniumCsharpDemo.exe
+C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\obj\Debug\SeleniumCsharpDemo.dll
 C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\obj\Debug\SeleniumCsharpDemo.pdb
 C:\Users\lavan\Desktop\LavanyaIC\SeleniumCsharpDemo\SeleniumCsharpDemo\obj\Debug\SeleniumCsharpDemo.csprojAssemblyReference.cache

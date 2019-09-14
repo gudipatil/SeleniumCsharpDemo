@@ -12,15 +12,14 @@ namespace SeleniumCsharpDemo.WrapperFactory
 {
     class BrowserFactory
     {
-        private static readonly IDictionary<string, IWebDriver> Drivers = new Dictionary<string, IWebDriver>();
         private static IWebDriver driver;
 
         public static IWebDriver Driver
         {
             get
             {
-                //if (driver == null)
-                //    throw new NullReferenceException("The WebDriver browser instance was not initialized. You should first call the method InitBrowser.");
+                if (driver == null)
+                    throw new NullReferenceException("The WebDriver browser instance was not initialized. You should first call the method InitBrowser.");
                 return driver;
             }
             private set
@@ -34,34 +33,37 @@ namespace SeleniumCsharpDemo.WrapperFactory
             switch (browserName.ToUpper())
             {
                 case "FIREFOX":
-                    if (Driver == null)
+                    if (driver == null)
                     {
                         driver = new FirefoxDriver();
-                        Drivers.Add("Firefox", Driver);
                     }
                     break;
                 case "CHROME":
-                    if (Driver == null)
+                    if (driver == null)
                     {
                         driver = new ChromeDriver();
-                        Drivers.Add("Chrome", Driver);
                     }
+                    break;
+                default:
+                    Console.WriteLine("Supports firefox and chrome browser");
                     break;
             }
         }
         public static void LoadApplication(string url)
         {
-            Driver.Url = url;
+            Driver.Navigate().GoToUrl(url);
             Driver.Manage().Window.Maximize();
         }
 
-        public static void CloseAllDrivers()
+        public static void CloseDriver()
         {
-            foreach (var key in Drivers.Keys)
-            {
-                Drivers[key].Close();
-                Drivers[key].Quit();
-            }
+            Driver.Close();
+            Driver.Quit();
+            // To-do  Make it thread safe to run parallel tests
+            // Don't want to create a instance of BrowserFactory(), for this reason driver should be set to null
+            // after a Close()/Quit().
+            driver = null;
+                          
         }
     }
 
